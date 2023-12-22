@@ -34,6 +34,7 @@ while True:
 
 # Making a function to display the page when the owner logs in    
     def OwnerPage():
+        print("------------WELCOME OWNER-----------")
         print('''1. Add \n2. Update \n3. Delete \n4. Display all \n5. Change password \n6. Log out \n
                  ''')
         ownerInp = int(input("Enter your choice: "))
@@ -98,6 +99,7 @@ while True:
 #Making a function to store the customer page
 
     def CustPage():
+        print("------------WELCOME CUSTOMER-----------")
         print("1. Purchase \n2. Payment \n3. Shop\n4. Cart \n5. Exit")
         custInp = input("Enter your choice: ")
 
@@ -175,7 +177,6 @@ while True:
             username, password = i
         if userN == username and userPass == password:
             while mainLoop == "y":
-                print("Welcome Owner")
                 OwnerPage()
 
 #using a while loop to stay logged in 
